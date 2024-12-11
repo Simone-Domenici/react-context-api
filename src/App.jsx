@@ -10,6 +10,7 @@ import PostDetail from './pages/PostDetail';
 import CreatePost from './pages/posts/CreatePost';
 import PostsContext from './contexts/PostsContext';
 import axios from 'axios';
+import PostsPage from './components/posts/PostPage';
 
 function App(){
 
@@ -38,7 +39,8 @@ function App(){
             <Route path="/" element={<Home />} />
             <Route path='/about' element={<About />} />
             <Route path='/posts'>
-              <Route index Component={AllPosts} />
+              {/* <Route index Component={AllPosts} /> */}
+              <Route index Component={PostsPage}/>
               <Route path=':id' element={<PostDetail />} />
               <Route path='create' element={<CreatePost />} />
             </Route>
