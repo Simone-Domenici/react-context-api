@@ -89,13 +89,20 @@ export default function CreatePost() {
         </label>
         <label>
           Category:
-          <input
-            type="text"
+          <select
             name="category"
             value={formData.category}
             onChange={handleChange}
             required
-          />
+          >
+            <option value="">Seleziona una categoria</option>
+            <option value="Accessories">Accessories</option>
+            <option value="Hardware">Hardware</option>
+            <option value="DIY">DIY</option>
+            <option value="Technology">Technology</option>
+            <option value="Peripherals">Peripherals</option>
+            <option value="Games">Games</option>
+          </select>
         </label>
         <button type="submit">Create Post</button>
       </form>
