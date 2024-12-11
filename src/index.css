@@ -295,3 +295,57 @@ form select {
   color: lime;
 }
 
+/* Categorie */
+.categories {
+  margin-bottom: 20px;
+  padding: 10px 0;
+  border-bottom: 2px solid #333;
+}
+
+.categories h2 {
+  margin-bottom: 10px;
+  font-size: 1.5rem;
+  color: lightslategrey;
+}
+
+.categories ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: 15px;
+}
+
+.categories li {
+  background: #2a2a2a;
+  padding: 8px 12px;
+  border-radius: 16px;
+  font-size: 0.9rem;
+  color: whitesmoke;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.categories li:hover {
+  background: #444;
+}
+
+/* Pulsante "Back" */
+.back-button {
+  display: inline-block;
+  padding: 10px 16px;
+  margin: 20px 0;
+  font-size: 1rem;
+  background: #333;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.back-button:hover {
+  background: #555;
+}
+
+.back-button:active {
+  background: #111

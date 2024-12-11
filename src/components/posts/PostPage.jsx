@@ -6,8 +6,8 @@ export default function PostsPage() {
   const { categories } = useContext(PostsContext)
 
   return (
-    <div>
-      <h1>All Posts</h1>
+    <div className="all-posts">
+      <h1 className="title">All Posts List</h1>
       <div className="categories">
         <h2>Categories</h2>
         <ul>
